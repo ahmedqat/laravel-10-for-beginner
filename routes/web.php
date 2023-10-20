@@ -22,7 +22,7 @@ Route::get('/', function () {
 
     // $users = DB::table('users')->get();
 
-   $user = User::find(17);
+//    $user = User::find(17);
 
     
 
@@ -88,7 +88,9 @@ Route::get('/', function () {
     
 
 
-    dd($user->name);
+    // dd($user->name);
+
+    return view('welcome');
 });
 
 Route::get('/dashboard', function () {
