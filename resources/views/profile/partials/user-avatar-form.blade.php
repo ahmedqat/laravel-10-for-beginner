@@ -17,19 +17,11 @@
     @endif
 
 
-    <form method="POST" action="{{ route('profile.avatar') }}">
+    <form method="POST" action="{{ route('profile.avatar') }}" enctype="multipart/form-data"    >
         @method('patch')
-
         @csrf
 
-
         {{-- <input type="hidden" name="_token" value="{{ csrf_token() }}"> --}}
-
-
-
-
-    
-
     
         <div>
             <x-input-label for="name" :value="__('Avatar')" />
